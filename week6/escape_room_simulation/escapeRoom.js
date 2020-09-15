@@ -1,8 +1,8 @@
-const readlineSync = require('readline-sync')
+const readlineSync = require('readline-sync');
 const introToGame = readlineSync.keyInYN('Hello Welcome to the Escape Room! Are you ready to play? ');
 const userChoice = readlineSync.question(`You have 3 options to escape the room \n 1. Put your hand in the hole \n 2. Find the key \n 3. Open the door \n What would you like to do? Select a number to move on with the game! `);
 
-let isAlive = true
+let isAlive = true;
 
 
 if (userChoice == 1) {
@@ -32,7 +32,7 @@ if (userChoice == 1) {
     console.log(`You havent found the key yet try looking for the key first!`);
     isAlive == true
 
-    const secondUserChoice = readlineSync.question(` 1. Put your hand in the hole \n 2. Find the key \n 3. Open the door \n What would you like to do? Select a number to move on with the game! `);
+    const secondUserChoice = readlineSync.question(` 1. Put your hand in the hole \n 2. Find the key \n 3. Open the door \n What would you like to do? Select a numbner to move on with the game! `);
     if (secondUserChoice == 2) {
         console.log(`Congratulations you have found the key!! Now use the key to open the door to escape the room.`);
         const thirdUserChoice = readlineSync.question(` 1. Put your hand in the hole \n 2. Find the key \n 3. Open the door \n What would you like to do? Select a number to move on with the game! `);

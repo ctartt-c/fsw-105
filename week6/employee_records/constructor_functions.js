@@ -16,4 +16,4 @@ let thirdEmployee = new Employee('Carrett Tartt.', 'Data Analyst', 75000, 'Part-
 employees.push(firstEmployee);
 employees.push(secondEmployee);
 employees.push(thirdEmployee);
-console.log(employees)
+console.log(employees);
